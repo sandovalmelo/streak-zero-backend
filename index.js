@@ -11,7 +11,7 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-	res.json({ messagge: "Olá Júnior" });
+	res.send("API Rodando");
 });
 
 app.get("/habits", async (req, res) => {
